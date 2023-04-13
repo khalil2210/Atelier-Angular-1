@@ -7,6 +7,7 @@ import { AsideComponent } from './aside/aside.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsComponentComponent } from './products-component/products-component.component';
 import { FormsModule } from '@angular/forms';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     AsideComponent,
     FooterComponent,
-    ProductsComponentComponent
+    ProductsComponentComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
