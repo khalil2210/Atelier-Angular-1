@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductsComponentComponent } from './products-component/products-component.component';
 import { FormsModule } from '@angular/forms';
 import { HomePageComponent } from './home-page/home-page.component';
+import { PagenotComponent } from './pagenot/pagenot.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     AsideComponent,
     FooterComponent,
     ProductsComponentComponent,
-    HomePageComponent
+    HomePageComponent,
+    PagenotComponent
   ],
   imports: [
     BrowserModule,
