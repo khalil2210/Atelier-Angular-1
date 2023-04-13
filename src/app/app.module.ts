@@ -9,6 +9,7 @@ import { ProductsComponentComponent } from './products-component/products-compon
 import { FormsModule } from '@angular/forms';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PagenotComponent } from './pagenot/pagenot.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PagenotComponent } from './pagenot/pagenot.component';
     FooterComponent,
     ProductsComponentComponent,
     HomePageComponent,
-    PagenotComponent
+    PagenotComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,

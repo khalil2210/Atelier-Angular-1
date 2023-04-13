@@ -2,17 +2,21 @@
 <input [(ngModel)]="value" type="search" class="form-control" style="width: 14rem;" placeholder="enter your value">
 <div *ngFor="let product of ListProduct">
   <div *ngIf="product.price<value || !value ; else notFound">
-  <div class="card m-3" style="width: 14rem;">
+  <div class="card m-3" style="width: 40%;">
     <div class="card-body">
       <h5 class="card-title">{{product.title}}</h5>
       <h6 class="card-subtitle mb-2 text-body-secondary">quantity : {{product.quantity}} likes : {{product.like}}</h6>
-      <div class="m-1">
+      <div class="m-1" >
         <button type="button" class="btn btn-success m-1" (click)="buyProduct(product)" [disabled]="!product.quantity">Buy</button>
-        <button type="button" class="btn btn-danger"(click)="likeProduct(product)">Like</button>
+        <button type="button" class="btn btn-danger m-1"(click)="likeProduct(product)">Like</button>
+        <a type="button" class="btn btn-outline-secondary m-1" [routerLink]="['updateProduct',product.id]">update product </a>
         </div>
         </div>
     </div>
   </div>
+  </div>
 <ng-template #notFound>
   <p> not Found</p>
 </ng-template>
+<router-outlet></router-outlet>
+
